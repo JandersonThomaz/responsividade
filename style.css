@@ -1,0 +1,125 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Resetando os espaçamentos da renderização do html */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* Definindo o espaço inicial em porcentagem */
+	padding-left: 15%;
+	padding-right: 15%;
+	
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+header, footer {
+	height: 150px;
+	background-color: #ececec;
+}
+header {
+	margin-bottom: 10px;
+}
+footer {
+	margin-top: 10px;
+	clear:both;
+}
+
+.link {
+	background-color: #3498db;
+	color: #ffffff;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+	text-align:center;
+	padding: 5px;
+}
+
+#content .item {
+	background-color: #ececec;
+	float: left;
+
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+
+	width: 24%;
+}
+
+#content .item:not(:first-child) {
+	margin-left: 1.3333%;
+}
+
+/* Tornando a imagem responsiva */
+#content .item img { 
+	height: auto;
+
+	width: 100%;
+}
+
+#content .item p, #content .item a {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 100%;
+}
+
+/* Media Queries */
+/*@media only screen and (max-width: 540px) {
+	body {
+		padding-left: 15px!important;
+		padding-right: 15px!important;
+	}
+
+	#content .item {
+		width: 100%;
+	}
+
+	#content .item:not(:first-child) {
+		margin-left: 0;
+	}
+
+	#content .item {
+		font-size: 150%;
+	}
+
+	.link {
+		padding: 10px;
+		display:block;
+	}
+}*/
+
+/*@media only screen and (min-width: 541px) and (max-width: 720px) {
+	body {
+		background-color: #95a5a6;
+	}
+}
+
+@media only screen and (min-width: 721px) {
+	body {
+		background-color: #34495e;
+	}
+}
+
+@media only print {
+
+	body {
+		background-color: red;
+
+	}
+
+	#content .item {
+		width: 48%;
+		margin-left: 2%;
+	}
+
+	#footer {
+		display: none;
+	}
+}*/
+
